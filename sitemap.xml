@@ -3,28 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://joakimskoog.com/about/</loc>
+    <loc>https://joakimskoog.com/about/</loc>
     <lastmod>2019-04-19T21:37:58+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://joakimskoog.com/</loc>
+    <loc>https://joakimskoog.com/</loc>
     <lastmod>2019-04-19T21:37:58+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://joakimskoog.com/projects/</loc>
+    <loc>https://joakimskoog.com/projects/</loc>
     <lastmod>2019-04-19T21:37:58+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://joakimskoog.com/tags/</loc>
+    <loc>https://joakimskoog.com/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
