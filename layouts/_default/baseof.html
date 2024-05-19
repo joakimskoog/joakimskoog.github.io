@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{- block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{- end }}</title>
+    {{- partial "seo.html" . -}}
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
+    {{- partial "style.html" . -}}
+</head>
+<body>
+    <header>
+        {{- partial "header.html" . -}}
+    </header>
+    <main>
+        {{- block "main" . }}{{- end }}
+    </main>
+    <footer>
+        {{- partial "footer.html" . -}}
+    </footer>
+</body>
+
+</html>

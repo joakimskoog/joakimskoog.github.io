@@ -1,0 +1,8 @@
+<a href="{{ "" | relURL }}">Joakim Skog Lundell</a>
+<nav>
+    {{ with .Site.GetPage "/posts" }}
+        <a href="{{ "posts" | relURL }}">Blog</a>
+    {{ end }}
+     - 
+    <a href="{{ relURL "feed.xml" }}">Feed</a>
+</nav>

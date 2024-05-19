@@ -1,0 +1,87 @@
+<style>
+    :root {
+    --background-color: #fff;
+    --header-color: #222;
+    --text-color: #444;
+    --link-color: rgb(58 134 255);
+}
+
+body {
+    font-family: Verdana, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: var(--background-color);
+    max-width: 720px;
+    line-height: 1.5;
+    margin: auto;
+    padding: 1rem;
+    text-align: left;
+    color: var(--text-color)
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-color);
+}
+
+article > h1 {
+    font-size: 2em;
+    margin-block: 0.67em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    text-transform:lowercase;
+    line-height: 1.5;
+}
+
+header nav {
+    float: right;
+}
+
+main  {
+    margin: 2rem 0;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Blog */
+ol.blog-posts {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ol.blog-posts li {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) { 
+    ol.blog-posts li {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+.highlight {
+    overflow-x: auto;
+    background-color: #f8f8f8;
+}
+</style>
