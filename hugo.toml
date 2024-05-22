@@ -1,0 +1,27 @@
+baseURL = "https://joakimskoog.com/"
+languageCode = "en-us"
+title = "Joakim Skog Lundell"
+author = "Joakim Skog Lundell"
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+enableRobotsTXT = true
+
+[params]
+    author = "Joakim Skog Lundell"
+    description = "My name is Joakim Skog Lundell. I'm a senior software engineer that is currently helping people run their small businesses through automation with Bokio. Previously, I worked on Nelly.com. I also build open source projects over at Github and occasionally write about topics that interest me."
+
+[outputFormats]
+    [outputFormats.RSS]
+        mediaType = "application/rss+xml"
+        baseName = "feed"
+
+[markup.highlight]
+    codeFences = true
+    noClasses = true
+    style = "emacs"
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 4
