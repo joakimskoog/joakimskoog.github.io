@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="511pt" height="133pt" viewBox="0.00 0.00 511.00 132.80">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 128.8)">
+<title>%0</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-128.8 507,-128.8 507,4 -4,4"/>
+<!-- PoisonSystem -->
+<g id="node1" class="node">
+<title>PoisonSystem</title>
+<ellipse fill="#ffffff" stroke="#000000" cx="269" cy="-106.8" rx="72" ry="18"/>
+<text text-anchor="middle" x="269" y="-102" font-family="Times,serif" font-size="16.00" fill="#000000">PoisonSystem</text>
+</g>
+<!-- GameOverSystem -->
+<g id="node2" class="node">
+<title>GameOverSystem</title>
+<ellipse fill="#ffffff" stroke="#000000" cx="72" cy="-18" rx="72" ry="18"/>
+<text text-anchor="middle" x="72" y="-13.2" font-family="Times,serif" font-size="16.00" fill="#000000">GameOverSystem</text>
+</g>
+<!-- PoisonSystem&#45;&gt;GameOverSystem -->
+<g id="edge1" class="edge">
+<title>PoisonSystem-&gt;GameOverSystem</title>
+<path fill="none" stroke="#000000" d="M233.7803,-90.9243C200.9656,-76.1327 151.9016,-54.0166 116.4136,-38.0199"/>
+<polygon fill="#000000" stroke="#000000" points="117.8012,-34.8063 107.2463,-33.8877 114.9246,-41.188 117.8012,-34.8063"/>
+<text text-anchor="middle" x="207.6585" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">Health</text>
+</g>
+<!-- HealthBarSystem -->
+<g id="node3" class="node">
+<title>HealthBarSystem</title>
+<ellipse fill="#ffffff" stroke="#000000" cx="234" cy="-18" rx="72" ry="18"/>
+<text text-anchor="middle" x="234" y="-13.2" font-family="Times,serif" font-size="16.00" fill="#000000">HealthBarSystem</text>
+</g>
+<!-- PoisonSystem&#45;&gt;HealthBarSystem -->
+<g id="edge2" class="edge">
+<title>PoisonSystem-&gt;HealthBarSystem</title>
+<path fill="none" stroke="#000000" d="M254.8958,-88.9169C251.0911,-83.3685 247.3067,-77.0605 244.683,-70.8 241.4296,-63.037 239.1434,-54.2065 237.5464,-46.0185"/>
+<polygon fill="#000000" stroke="#000000" points="240.9908,-45.3953 235.8712,-36.1195 234.0889,-46.5633 240.9908,-45.3953"/>
+<text text-anchor="middle" x="262.6585" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">Health</text>
+</g>
+<!-- BulletSystem -->
+<g id="node4" class="node">
+<title>BulletSystem</title>
+<ellipse fill="#ffffff" stroke="#000000" cx="396" cy="-18" rx="72" ry="18"/>
+<text text-anchor="middle" x="396" y="-13.2" font-family="Times,serif" font-size="16.00" fill="#000000">BulletSystem</text>
+</g>
+<!-- PoisonSystem&#45;&gt;BulletSystem -->
+<g id="edge3" class="edge">
+<title>PoisonSystem-&gt;BulletSystem</title>
+<path fill="none" stroke="#000000" d="M285.783,-88.8111C296.5322,-77.9118 311.1482,-64.1924 325.683,-54 333.6836,-48.3896 342.6777,-43.1135 351.4925,-38.4203"/>
+<polygon fill="#000000" stroke="#000000" points="353.2748,-41.4394 360.5643,-33.7508 350.0712,-35.2155 353.2748,-41.4394"/>
+<text text-anchor="middle" x="343.6585" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">Health</text>
+</g>
+<!-- BulletSystem&#45;&gt;PoisonSystem -->
+<g id="edge4" class="edge">
+<title>BulletSystem-&gt;PoisonSystem</title>
+<path fill="none" stroke="#000000" d="M388.4018,-36.0186C382.8255,-47.3466 374.2645,-61.5225 363,-70.8 353.2077,-78.865 341.4103,-85.2509 329.5324,-90.2614"/>
+<polygon fill="#000000" stroke="#000000" points="328.0571,-87.0804 320.026,-93.9906 330.6136,-93.5969 328.0571,-87.0804"/>
+<text text-anchor="middle" x="395.6585" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">Health</text>
+</g>
+<!-- MovementSystem -->
+<g id="node5" class="node">
+<title>MovementSystem</title>
+<ellipse fill="#ffffff" stroke="#000000" cx="431" cy="-106.8" rx="72" ry="18"/>
+<text text-anchor="middle" x="431" y="-102" font-family="Times,serif" font-size="16.00" fill="#000000">MovementSystem</text>
+</g>
+</g>
+</svg>
