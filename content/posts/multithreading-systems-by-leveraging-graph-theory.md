@@ -129,7 +129,7 @@ public class GameSystem(string name, string read, string write)
 
     //These will come in handy later on, trust me
     public int NrOfIncomingEdges { get; set; }
-    public JobHandle JobHandle { get; set; }
+    public JobReference JobReference { get; set; }
 
     //Helper method to make the graph creation code easier to read
     public void AddOutgoingEdgeTo(GameSystem toVertex)
