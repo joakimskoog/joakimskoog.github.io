@@ -1,6 +1,6 @@
 ---
 title: Multithreading Systems by Leveraging Graph Theory
-description: We multithread a game by leveraging graph theory and performing a topological sort with Kahn's algorithm.
+description: Multithreading an example game by leveraging graph theory and performing a topological sort with Kahn's algorithm.
 tags:
     - multithreading
     - game
