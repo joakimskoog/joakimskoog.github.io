@@ -15,7 +15,7 @@ I've always wanted to make a game. I think a lot of people share that feeling. I
 This is a big change from my last big side project, [An API of Ice And Fire](https://anapioficeandfire.com/), a REST API that I created in 2016 that got a lot of attention. The highlight? An interview with [The Wall Street Journal](https://www.wsj.com/articles/fans-geek-out-over-game-of-thrones-data-1499877067?mod=e2tw).
 
 ## Why Not Use an Engine?
-You want the honest truth? Because I want to. Using a game engine would help me finish faster - and the final game might even be better. But I want to learn how to build a game from the ground up. I want to understand every single line of code, from creating a window to manually managing memory to rendering it all on screen. It won't be easy, and it'll take a long time - but that's the point. 
+You want the honest truth? Because I don't want to. Using a game engine would help me finish faster - and the final game might even be better. But I want to learn how to build a game from the ground up. I want to understand every single line of code, from creating a window to manually managing memory to rendering it all on screen. It won't be easy, and it'll take a long time - but that's the point. 
 
 I'm not trying to make the next Triple-A shooter. I'm going for something more humble and fun. I'm keeping the details secret for now because they might change, but it's inspired by a game I had a lot of fun playing as a kid.
 
