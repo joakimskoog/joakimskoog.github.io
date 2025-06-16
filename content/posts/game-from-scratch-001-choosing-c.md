@@ -29,6 +29,12 @@ I wrote earlier that your main function is not the first thing that gets called 
 ### Full control
 What I lose in convenience I gain in control. I won't be able to use things such as malloc to get a platform independent way of allocating memory. That's no issue for me though since I intend to write platform specific code and utilize the power of each platform. A good replacement for malloc would be VirtualAlloc on Windows. I'm hoping to separate all game code from the platform specific implementations so this should not be a problem for me.
 
+### References
+I want to highlight two great guides that helped me escape the C Runtime. They are really easy to follow so please take a look if you're interested!
+
+- [How to avoid linking to CRT with MSVC in modern way](https://gist.github.com/mmozeiko/81e9c0253cc724638947a53b826888e9)
+- [CRT-free in 2023: tips and tricks](https://nullprogram.com/blog/2023/02/15/)
+
 ## Build.bat
 I'm not using an IDE, as can be seen in my [previous post]({{< relref "posts/game-from-scratch-000-dream-big.md" >}}) so I need a way to build my code. I didn't want anything overly complex like [CMake](https://cmake.org/). Eventually, I found the idea of a [single script file](https://github.com/EpicGamesExt/raddebugger/blob/master/build.bat) used for building an entire project. I wrote my own version and it has honestly been great. Just 20 lines of batch script, building both debug and release versions every time. Compile times are under a second, so there's no reason not to build both versions.
 
