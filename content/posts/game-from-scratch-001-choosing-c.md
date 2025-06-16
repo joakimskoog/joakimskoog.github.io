@@ -20,14 +20,75 @@ One cool thing about C is the control it gives you. I found out while reading th
 
 So why skip it? Why ditch those handy cross-platform utilities? Why go through all this extra work? I've seen some really experienced developers complain about the quality of the CRT but I can't really speak to that because I don't have enough experience with it. Honestly, I see it as a challenge and a way to learn. I also hope to gain three specific things by not using the CRT:
 
-### Smaller binaries
+### 1. Smaller binaries
 By avoiding the C Runtime I can reduce the size of my final binary by a lot (yes, I know about dynamic linking but play along). CRT version: 101KB. My version: 4KB. That's a huge difference! These days, with fast internet a smaller binary size is not that important but I like to believe that people appreciate it. It's also a fun challenge to keep the binary size small.
 
-### Startup speed
+### 2. Startup speed
 I wrote earlier that your main function is not the first thing that gets called when your program starts. The CRT runs first to set things up and parse arguments before it even calls your main function. By avoiding all of that I should, in theory, get a much faster startup which will hopefully be noticeable.
 
-### Full control
+### 3. Full control
 What I lose in convenience I gain in control. I won't be able to use things such as malloc to get a platform independent way of allocating memory. That's no issue for me though since I intend to write platform specific code and utilize the power of each platform. A good replacement for malloc would be VirtualAlloc on Windows. I'm hoping to separate all game code from the platform specific implementations so this should not be a problem for me.
+
+### How
+I won’t go into every low-level detail, there are great resources linked below, but here are a few highlights that might surprise you.
+
+Normally main() or WinMain() is the entry point to your application but with the windows subsystem and no CRT you should use this instead.
+```c
+void WinMainCRTStartup() 
+{
+    ExitProcess(0);
+}
+```
+
+If you use floating-point operations  in your code, it's expected that the global variable `_fltused` is initialized and the CRT does that for you. Without the CRT, we have to do it ourselves. Let's do it and be on our way!
+
+```c
+void WinMainCRTStartup() 
+{
+    ExitProcess(0);
+}
+
+int _fltused = 0x9875; //The value is not important but I just copied it from the CRT
+```
+
+MSVC may emit calls to `memset` and `memcpy` when initializing structs or arrays. Normally, the CRT handles these. In our case? You guessed it: DIY!
+
+
+```c
+void WinMainCRTStartup() 
+{
+    ExitProcess(0);
+}
+
+int _fltused = 0x9875; //The value is not important but I just copied it from the CRT
+
+#pragma function(memset)
+void *memset(void *destination, int value, size_t size)
+{
+    unsigned char *dest = (unsigned char *)destination;
+    while(size--)
+    {
+        *dest++ = (unsigned char)value;
+    }
+
+    return destination;
+}
+
+#pragma function(memcpy)
+void *memcpy(void *destination, void const *source, size_t size)
+{
+    unsigned char *src = (unsigned char *)source;
+    unsigned char *dest = (unsigned char *)destination;
+    while(size--)
+    {
+        *dest++ = *src++;
+    }
+
+    return destination;
+}
+```
+
+I also use some compiler flags to skip CRT-dependent features like buffer checks, but more on that later.
 
 ### References
 I want to highlight two great guides that helped me escape the C Runtime. They are really easy to follow so please take a look if you're interested!
