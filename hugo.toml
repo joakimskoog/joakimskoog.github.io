@@ -11,6 +11,7 @@ enableRobotsTXT = true
 [params]
     author = "Joakim Skog Lundell"
     description = "My name is Joakim Skog Lundell. I'm a senior software engineer that is currently helping people run their small businesses through automation with Bokio. Previously, I worked on Nelly.com. I also build open source projects over at Github and occasionally write about topics that interest me."
+    images = ["images/share.jpg"]
 
 [outputFormats]
     [outputFormats.RSS]
