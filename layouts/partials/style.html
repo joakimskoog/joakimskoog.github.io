@@ -1,94 +1,44 @@
 <style>
-    :root {
-    --background-color: #fff;
-    --header-color: #222;
-    --text-color: #444;
-    --link-color: rgb(58 134 255);
-}
 
 body {
-    font-family: Verdana, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: var(--background-color);
-    max-width: 720px;
-    line-height: 1.5;
-    margin: auto;
-    padding: 1rem;
-    text-align: left;
-    color: var(--text-color)
+  max-width:720px;
+  margin:auto;
+  padding:1rem;
+  font:18px/1.5 system-ui, sans-serif;
+  color:#444;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--header-color);
-}
-
-article > h1 {
-    font-size: 2em;
-    margin-block: 0.67em;
-}
-
-a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-table {
-    width: 100%;
+h1,
+h2,
+h3 {
+  line-height:1.2
 }
 
 img {
     max-width: 100%;
 }
 
-blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 1em;
-    font-style: italic;
+pre {
+    background-color: #eef2f5;
+    padding: 0.5rem;
+    overflow: auto;
 }
 
-main  {
-    margin: 2rem 0;
+@media (prefers-color-scheme: dark) {
+  body {
+    color:#c9d1d9;
+    background:#0d1117
+  }
+  a:link {
+    color:#58a6ff
+  }
+  a:visited {
+    color:#8e96f0
+  }
+
+  pre {
+    background-color: #1a1f28;
+  }
 }
 
-/* Fixes iOS font sizing anomaly (https://github.com/adityatelange/hugo-PaperMod/issues/828) */
-code {
-    text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-/* Blog */
-ol.blog-posts {
-    list-style-type: none;
-    padding: 0px;
-}
-
-ol.blog-posts li {
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-}
-
-@media (min-width: 576px) { 
-    ol.blog-posts li {
-        flex-direction: row;
-        margin-bottom: 0;
-    }
-}
-
-.highlight {
-    overflow-x: auto;
-    background-color: #f8f8f8;
-}
-
-.footnotes {
-    overflow-wrap: anywhere;
-    font-size: smaller;
-}
 </style>

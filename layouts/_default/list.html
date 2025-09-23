@@ -1,19 +1,14 @@
 {{ define "main" }}
 
-<ol class="blog-posts">
+
+<h1>Articles</h1>
+<section>
     {{ range .Pages }}
-        <li>
+        <article>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
-            <span>
-                <i>
-                    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-                        {{ .Date.Format (default "Jan 02, 2006" .Site.Params.dateFormat) }}
-                    </time>
-                </i>
-            </span>
-        </li>
+        </article>
     {{ else }}
-        <li>No posts yet</li>
+        <span>No posts yet</span>
     {{ end }}
-</ol>
+    </section>
 {{ end }}

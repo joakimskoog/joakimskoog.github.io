@@ -3,5 +3,6 @@
 ---
 
 # Joakim Skog Lundell
+Automating accounting with [Bokio](https://bokio.se/). Previously: [Nelly.com](https://nelly.com/). 
 
-I'm helping small businesses automate their work with [Bokio](https://bokio.se/). Previously, I worked at [Nelly.com](https://nelly.com/). I build [open source software](https://github.com/joakimskoog), and if you would like to work together you can find me on [LinkedIn](https://www.linkedin.com/in/joakimskoog).
+See my [open source contributions](https://github.com/joakimskoog), [follow updates](https://joakimskoog.com/feed.xml) or [connect to work together](https://www.linkedin.com/in/joakimskoog).

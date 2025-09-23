@@ -19,10 +19,5 @@ enableRobotsTXT = true
         baseName = "feed"
 
 [markup.highlight]
-    codeFences = true
+    codeFences = false
     noClasses = true
-    style = "emacs"
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = true
-    tabWidth = 4
